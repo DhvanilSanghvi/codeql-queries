@@ -1,0 +1,123 @@
+[2021-12-16 09:17:05] This is codeql execute queries -J-Xmx15344M --off-heap-ram=15344 --verbosity=progress --logdir=/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/db/log --evaluator-log-level=1 --threads=0 --ml-model-path= --native-library-path= --warnings=show --qlconfig-file=/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/qlconfig.yml -- /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/db/db-javascript /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql
+[2021-12-16 09:17:05] Calling plumbing command: codeql resolve queries --qlconfig-file=/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/qlconfig.yml --format=json -- /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql
+[2021-12-16 09:17:05] Plumbing command codeql resolve queries completed:
+                      [
+                        "/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql"
+                      ]
+[2021-12-16 09:17:05] Creating executor with 24 threads.
+[2021-12-16 09:17:05] Calling plumbing command: codeql resolve library-path --qlconfig-file=/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/qlconfig.yml --query=/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql --format=json
+[2021-12-16 09:17:05] [DETAILS] resolve library-path> Resolving query at normalized path /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql.
+[2021-12-16 09:17:05] [DETAILS] resolve library-path> Found no enclosing pack; trying after symlink resolution with /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql.
+[2021-12-16 09:17:05] [DETAILS] resolve library-path> Found enclosing pack 'javascript' at /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript.
+[2021-12-16 09:17:05] [DETAILS] resolve library-path> Adding compilation cache at /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/.cache.
+[2021-12-16 09:17:05] [DETAILS] resolve library-path> Resolving library dependencies from /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql.
+[2021-12-16 09:17:05] [DETAILS] resolve library-path> QL pack dependencies for /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript resolved OK.
+[2021-12-16 09:17:05] [DETAILS] resolve library-path> Found no dbscheme through dependencies.
+[2021-12-16 09:17:05] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript"
+                        ],
+                        "compilationCache" : [
+                          "/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/.cache"
+                        ],
+                        "relativeName" : "javascript/LogInjection.ql",
+                        "possibleAdvice" : "There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory.",
+                        "qlPackName" : "javascript"
+                      }
+[2021-12-16 09:17:05] [PROGRESS] execute queries> Compiling query plan for /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql.
+[2021-12-16 09:17:05] [DETAILS] execute queries> Resolving imports for /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql.
+[2021-12-16 09:17:06] Resolved file set for /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql hashes to a2fdce2c1179223b9bc8f7ccee77d6d95337a6d0.
+[2021-12-16 09:17:06] [DETAILS] execute queries> Checking QL for /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql.
+[2021-12-16 09:17:06] ExternalModuleBindingPass ...
+[2021-12-16 09:17:06] ExternalModuleBindingPass time: 00:00.005
+[2021-12-16 09:17:06] QLPredicateSynthesiser ...
+[2021-12-16 09:17:06] QLPredicateSynthesiser time: 00:00.005
+[2021-12-16 09:17:06] DeclarationBindingPass ...
+[2021-12-16 09:17:06] DeclarationBindingPass time: 00:00.012
+[2021-12-16 09:17:06] Fixed point time ...
+[2021-12-16 09:17:06] Fixed point time time: 00:00.008
+[2021-12-16 09:17:06] ReferenceBindingPass ...
+[2021-12-16 09:17:06] ReferenceBindingPass time: 00:00.001
+[2021-12-16 09:17:06] EntityTypeUpdateBindingPass ...
+[2021-12-16 09:17:06] EntityTypeUpdateBindingPass time: 00:00.001
+[2021-12-16 09:17:06] DeclarationBindingPass ...
+[2021-12-16 09:17:06] DeclarationBindingPass time: 00:00.003
+[2021-12-16 09:17:06] PredicateBodyBindingPass ...
+[2021-12-16 09:17:06] PredicateBodyBindingPass time: 00:00.020
+[2021-12-16 09:17:06] LanguagePragmaPropagationPass ...
+[2021-12-16 09:17:06] LanguagePragmaPropagationPass time: 00:00.000
+[2021-12-16 09:17:06] Ambiguity checks ...
+[2021-12-16 09:17:06] Ambiguity checks time: 00:00.002
+[2021-12-16 09:17:06] Ql checks ...
+[2021-12-16 09:17:06] Ql checks time: 00:00.017
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module semmle.javascript.security.dataflow.LogInjectionQuery. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:16,8-61)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module semmle.javascript.dataflow.internal.AccessPaths. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:139,8-55)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module javascript. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:15,8-18)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:17,8-16)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module TaintTracking. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:39,46-59)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type LogInjectionConfiguration (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:40,3-28)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:51,32-40)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:51,56-64)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:51,78-86)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:51,105-113)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:77,42-50)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:77,62-70)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:78,5-13)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:78,35-43)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:83,31-39)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:83,54-62)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:86,29-37)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:86,50-58)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:90,31-39)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:93,29-37)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:97,32-40)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module TaintTracking. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:99,39-52)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:100,34-42)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:104,5-13)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:104,25-33)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:104,45-53)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:105,5-13)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:115,5-13)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:115,25-33)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:19,37-45)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:19,58-66)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:20,10-18)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:148,3-11)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type Expr (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:148,54-58)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:163,3-11)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type AccessPath (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:163,54-64)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:175,3-11)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type SsaRefinementNode (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:175,54-71)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type SsaVariable (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:178,9-20)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:190,3-11)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type ConditionGuardNode (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:190,37-55)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:208,3-11)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:208,37-45)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type SsaRefinementNode (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:211,10-27)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:212,10-18)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type ConditionGuardNode (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:213,31-49)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type AccessPath (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:218,10-20)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type BasicBlock (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:218,24-34)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve type ConditionGuardNode (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:218,39-57)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:219,10-18)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:126,39-47)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:126,66-74)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:127,3-11)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: Could not resolve module DataFlow. There should probably be a qlpack.yml file declaring dependencies in /mnt/disk1/t-namanjain/CodeQLSanitizers/javascript or an enclosing directory. (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:127,27-35)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: hasFlowPath(<unknown>, <unknown>) cannot be resolved for type ConfigurationWithoutSanitizers (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:129,7-18)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: ConfigurationWithoutSanitizers must implement toString() (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:39,7-37)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: This predicate does not override another predicate (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:83,3-85,4)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: This predicate does not override another predicate (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:86,3-88,4)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: This predicate does not override another predicate (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:90,3-92,4)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: This predicate does not override another predicate (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:93,3-95,4)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: This predicate does not override another predicate (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:97,3-63)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: This predicate does not override another predicate (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:99,3-90)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: This predicate does not override another predicate (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:100,3-63)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: This predicate does not override another predicate (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:103,3-112,4)
+[2021-12-16 09:17:06] [ERROR] execute queries> ERROR: This predicate does not override another predicate (/mnt/disk1/t-namanjain/CodeQLSanitizers/javascript/LogInjection.ql:114,3-121,4)
+[2021-12-16 09:17:06] Sequence stamp origin is -6511659076795999295
+[2021-12-16 09:17:06] Pausing evaluation to close the cache at sequence stamp o+0
+[2021-12-16 09:17:06] The disk cache is freshly trimmed; leave it be.
+[2021-12-16 09:17:06] Unpausing evaluation
+[2021-12-16 09:17:06] Exiting with code 2

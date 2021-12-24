@@ -1,0 +1,11 @@
+[2021-12-16 07:42:32] This is codeql query run -d=db /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitization.ql -j 0
+[2021-12-16 07:42:32] Log file was started late.
+[2021-12-16 07:42:32] Calling plumbing command: codeql resolve ram --format=json
+[2021-12-16 07:42:32] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx15344M",
+                        "--off-heap-ram=15344"
+                      ]
+[2021-12-16 07:42:32] Spawning plumbing command: execute queries -J-Xmx15344M --off-heap-ram=15344 --verbosity=progress --logdir=/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/db/log --evaluator-log-level=1 --threads=0 --ml-model-path= --native-library-path= --warnings=show --qlconfig-file=/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/qlconfig.yml -- /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/db/db-javascript /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitization.ql
+[2021-12-16 07:42:44] Plumbing command codeql execute queries terminated with status 0.
+[2021-12-16 07:42:44] Exiting with code 0

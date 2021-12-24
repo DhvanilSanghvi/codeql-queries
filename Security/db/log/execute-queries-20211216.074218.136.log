@@ -1,0 +1,61 @@
+[2021-12-16 07:42:18] This is codeql execute queries -J-Xmx15344M --off-heap-ram=15344 --verbosity=progress --logdir=/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/db/log --evaluator-log-level=1 --threads=0 --ml-model-path= --native-library-path= --warnings=show --qlconfig-file=/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/qlconfig.yml -- /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/db/db-javascript /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql
+[2021-12-16 07:42:18] Calling plumbing command: codeql resolve queries --qlconfig-file=/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/qlconfig.yml --format=json -- /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql
+[2021-12-16 07:42:18] Plumbing command codeql resolve queries completed:
+                      [
+                        "/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql"
+                      ]
+[2021-12-16 07:42:18] Creating executor with 24 threads.
+[2021-12-16 07:42:18] Calling plumbing command: codeql resolve library-path --qlconfig-file=/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/qlconfig.yml --query=/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql --format=json
+[2021-12-16 07:42:18] [DETAILS] resolve library-path> Resolving query at normalized path /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql.
+[2021-12-16 07:42:18] [DETAILS] resolve library-path> Found enclosing pack 'codeql/javascript-queries' at /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src.
+[2021-12-16 07:42:18] [DETAILS] resolve library-path> Adding compilation cache at /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/.cache.
+[2021-12-16 07:42:18] [DETAILS] resolve library-path> Resolving library dependencies from /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/qlpack.yml.
+[2021-12-16 07:42:18] [DETAILS] resolve library-path> QL pack dependencies for /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src resolved OK.
+[2021-12-16 07:42:18] [DETAILS] resolve library-path> Found dbscheme through QL packs: /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/lib/semmlecode.javascript.dbscheme.
+[2021-12-16 07:42:18] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src",
+                          "/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/lib",
+                          "/mnt/disk1/t-namanjain/CodeQL/codeql-repo/misc/suite-helpers",
+                          "/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/upgrades"
+                        ],
+                        "dbscheme" : "/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/lib/semmlecode.javascript.dbscheme",
+                        "compilationCache" : [
+                          "/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/.cache"
+                        ],
+                        "relativeName" : "codeql/javascript-queries/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql",
+                        "qlPackName" : "codeql/javascript-queries"
+                      }
+[2021-12-16 07:42:18] [PROGRESS] execute queries> Compiling query plan for /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql.
+[2021-12-16 07:42:18] [DETAILS] execute queries> Resolving imports for /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql.
+[2021-12-16 07:42:19] Resolved file set for /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql hashes to 78c97f58564b6a919f50e63d8f71482e5e911193.
+[2021-12-16 07:42:19] [DETAILS] execute queries> Checking QL for /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql.
+[2021-12-16 07:42:19] ExternalModuleBindingPass ...
+[2021-12-16 07:42:20] ExternalModuleBindingPass time: 00:00.985
+[2021-12-16 07:42:20] QLPredicateSynthesiser ...
+[2021-12-16 07:42:20] QLPredicateSynthesiser time: 00:00.023
+[2021-12-16 07:42:20] DeclarationBindingPass ...
+[2021-12-16 07:42:20] DeclarationBindingPass time: 00:00.119
+[2021-12-16 07:42:20] Fixed point time ...
+[2021-12-16 07:42:21] Fixed point time time: 00:00.713
+[2021-12-16 07:42:21] ReferenceBindingPass ...
+[2021-12-16 07:42:21] ReferenceBindingPass time: 00:00.147
+[2021-12-16 07:42:21] EntityTypeUpdateBindingPass ...
+[2021-12-16 07:42:21] EntityTypeUpdateBindingPass time: 00:00.109
+[2021-12-16 07:42:21] DeclarationBindingPass ...
+[2021-12-16 07:42:21] DeclarationBindingPass time: 00:00.085
+[2021-12-16 07:42:21] PredicateBodyBindingPass ...
+[2021-12-16 07:42:22] PredicateBodyBindingPass time: 00:00.577
+[2021-12-16 07:42:22] LanguagePragmaPropagationPass ...
+[2021-12-16 07:42:22] LanguagePragmaPropagationPass time: 00:00.041
+[2021-12-16 07:42:22] Ambiguity checks ...
+[2021-12-16 07:42:22] Ambiguity checks time: 00:00.146
+[2021-12-16 07:42:22] Ql checks ...
+[2021-12-16 07:42:23] Ql checks time: 00:00.714
+[2021-12-16 07:42:23] [ERROR] execute queries> ERROR: Could not resolve type IHAS::ConfigurationWithoutSanitizers (/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql:41,12-48)
+[2021-12-16 07:42:23] Sequence stamp origin is -6511683503280326052
+[2021-12-16 07:42:23] Pausing evaluation to close the cache at sequence stamp o+0
+[2021-12-16 07:42:23] The disk cache is freshly trimmed; leave it be.
+[2021-12-16 07:42:23] Unpausing evaluation
+[2021-12-16 07:42:23] Exiting with code 2

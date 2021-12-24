@@ -1,0 +1,12 @@
+[2021-12-16 07:42:17] This is codeql query run -d=db /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql -j 0
+[2021-12-16 07:42:17] Log file was started late.
+[2021-12-16 07:42:17] Calling plumbing command: codeql resolve ram --format=json
+[2021-12-16 07:42:17] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx15344M",
+                        "--off-heap-ram=15344"
+                      ]
+[2021-12-16 07:42:17] Spawning plumbing command: execute queries -J-Xmx15344M --off-heap-ram=15344 --verbosity=progress --logdir=/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/db/log --evaluator-log-level=1 --threads=0 --ml-model-path= --native-library-path= --warnings=show --qlconfig-file=/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/qlconfig.yml -- /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/db/db-javascript /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql
+[2021-12-16 07:42:24] [ERROR] Spawned process exited abnormally (code 2; tried to run: [/mnt/disk1/t-namanjain/CodeQL/codeql/tools/linux64/java/bin/java, -Xmx15344M, -Djava.library.path=:/usr/local/HDF_Group/HDF5/1.12.0/lib/:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, -cp, /mnt/disk1/t-namanjain/CodeQL/codeql/tools/codeql.jar, com.semmle.cli2.CodeQL, env_argv, execute, queries, -J-Xmx15344M, _, _, _, _, _, _, _, _, _, --, /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security/db/db-javascript, /mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/src/Security/CWE-116/IncompleteHtmlAttributeSanitizationPS1.ql])
+[2021-12-16 07:42:24] Plumbing command codeql execute queries terminated with status 2.
+[2021-12-16 07:42:24] Exiting with code 2

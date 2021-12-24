@@ -1,0 +1,6 @@
+---
+sourceLocationPrefix: "/mnt/disk1/t-namanjain/CodeQL/codeql-repo/javascript/ql/test/query-tests/Security"
+baselineLinesOfCode: 10312
+unicodeNewlines: true
+columnKind: "utf16"
+primaryLanguage: "javascript"
